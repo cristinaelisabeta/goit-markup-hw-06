@@ -11,11 +11,47 @@
     <body>
         <div class="modal is-hidden" data-modal>
             <div class="inner-modal">
-                <button class="close-modal" type="button" data-modal-close>
-                </button>
-                <svg class="close-modal-icon" width="18" height="18">
-                    <use href="images/icomoon/close.svg#icon-close"></use>
-                  </svg>
+                <h3 class="inner-title">Leave your information and we'll call you back</h3>
+                <form name="modal form" autocomplete="on" novalidate>
+                  <label for="user_name" class="form-label">
+                    Name
+                      <svg class="icon-user icon-form">
+                        <use href="images/icomoonmodal/symbol-defs.svg#icon-user" class="icon-test"></use>
+                      </svg>
+                      <input type="name" name="name" id="user_name" class="inner-contact" autofocus>
+                  </label>
+                  <label for="user_phone" class="form-label">
+                    Telephone
+                    <svg class="icon-phone icon-form">
+                        <use href="images/icomoonmodal/symbol-defs.svg#icon-phone"></use>
+                      </svg>
+                    <input type="tel" name="phone" id="user_phone" class="inner-contact" autofocus>
+                  </label>
+                  <label for="user_email" class="form-label">
+                    E-mail
+                    <svg class="icon-mail icon-form">
+                        <use href="images/icomoonmodal/symbol-defs.svg#icon-mail"></use>
+                      </svg>
+                    <input type="email" name="e-mail"  id="user_email" class="inner-contact" autofocus>
+                  </label>
+                  <label for="user_comments" class="form-label">
+                    Comments
+                    <textarea name="comments" placeholder="Enter the text" class="inner-comments"></textarea>
+                  </label>
+                  <label for="user_checkbox" class="check-box">  
+                    <input type="checkbox" name="terms and conditions" class="terms-conditions" autofocus>
+                    <svg class="icon-check">
+                      <use href="images/close-modal.svg#icon-check"></use>
+                    </svg>
+                    I agree with the letter and accept the <span class="terms-conditions-last">Terms and Conditions</span>
+                  </label>
+                  <button type="submit" class="send-button">Send</button>
+                </form>
+              <div class="close-bg-modal" data-modal-close="">
+                <svg class="icon-close">
+                  <use href="images/icomoonmodal/symbol-defs.svg#icon-close"></use>
+                </svg>
+              </div>
             </div>
         </div>
         <header class="page-header">  
@@ -26,18 +62,15 @@
         </ul>
             </div>
         </section>
-        <nav>
-        <section class="page__section__list">
+        <nav class="page__section__list">
             <div class="container__menu">
         <ul class="grid__item__list unstyled-list">
-                    <li class="grid__item__menu"><a class="grid__studio link" href="studio">Studio</a></li>
-                    <li class="grid__item__menu"><a class="grid__portofolio link" href="portofolio">Portofolio</a></li>
+                    <li class="grid__item__menu"><a class="grid__studio link" href="index.html">Studio</a></li>
+                    <li class="grid__item__menu"><a class="grid__portofolio link" href="portofolio.html">Portofolio</a></li>
                     <li class="grid__item__menu"><a class="grid__contacts link" href="contacts">Contacts</a></li>
         </ul> 
             </div>
-        </section>
     </nav>
-        <section class="page__section__link">
             <div class="container__contacts">
                 <ul class="grid__item__contacts unstyled-list">
                     <li  class="grid__item__menu"><a class="grid__mail1 link" href="mailto:info@devstudio.com">
@@ -52,7 +85,6 @@
                     </li>
                   </ul>
             </div>
-        </section>
         </header>
     <main>
         <div class="container">
@@ -127,17 +159,17 @@
         <ul class="grid__heading unstyled-list">
             <li class="grid__item__heading">
             <img class="grid__image" height="294" width="370" src="images/img2.png" alt="calculator"/>
-            <div class="grid__text"><p>DESKTOP APPS</p>
+            <div class="grid__text"><p class="grid__text__paragrafe">DESKTOP APPS</p>
             </div>
             </li>
             <li class="grid__item__heading">
             <img class="grid__image" height="294" width="370" src="images/img.png"  alt="telefon"/>
-            <div class="grid__text"><p>MOBILE APPS</p>
+            <div class="grid__text"><p class="grid__text__paragrafe">MOBILE APPS</p>
             </div>
             </li> 
             <li class="grid__item__heading">
             <img class="grid__image" height="294" width="370" src="images/img (1).png"  alt="tableta"/>
-            <div class="grid__text"><p>DESIGN SOLUTIONS</p>
+            <div class="grid__text"><p class="grid__text__paragrafe">DESIGN SOLUTIONS</p>
             </div>
             </li> 
             </ul>
@@ -339,8 +371,7 @@
                     </ul>
                 </address>
             </div>
-                <section class="page-section-icons">
-                    <div class="main-menu-contacts-icons ">
+                    <div class="main-menu-contacts-icons">
                         <h3 class="section-icons">Find us on</h3>    
                     <ul class="unstyled-list social-list1">
                         <li>
@@ -373,6 +404,17 @@
                         </li>
                     </ul> 
                 </div>
+            <div class="subscribe-container">
+                <h2 class="footer-social-media-title">Subscribe to the newsletter</h2>
+                <form class="subscribe-form">
+                    <input type="email" name="email" class="imput-form" placeholder="E-mail">
+                    <button class="footer-button" type="button">
+                      Subscribe
+                      <svg class="plane-icon">
+                        <use href="./images/icomoonsubscribe/symbol-defs.svg#icon-icon-send"></use>
+                      </svg>
+                    </button>
+                  </form> 
         </section>
     </footer>
     <script src="./js/modal.js"></script>
